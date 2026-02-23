@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 440px) {
+
+    /* ESTILO DO HEADER */
+
+    header {
+        background-color: #ff6b00;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 20px;
+    }
+
+    header .local a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header .local a p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .local a .mais svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .local a .logo-loc svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    /* FIM DO ESTILO DO HEADER */
+
+    /* ESTILO DAS CATEGORIAS */
+
+    section.categorias {
+        padding: 22px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.categorias .interface {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    section.categorias .interface .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 999px;
+    }
+
+    section.categorias .interface .search .icon-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.categorias .interface .search input {
+        width: 85%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-size: 15px;
+    }
+
+    section.categorias .interface .search input::placeholder {
+        color: #7E8392;
+    }
+
+    section.categorias .categorias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    section.categorias .categorias a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    section.categorias .categorias .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    section.categorias .categorias .img {
+        background-color: #efefef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    section.categorias .categorias .card p {
+        font-size: 12.5px;
+    }
+
+    /* FIM DO ESTILO DAS CATEGORIAS */
+
+    /* ESTILO DOS ESTABELECIMENTOS */
+
+    section.estabelecimentos {
+        padding: 22px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 100px
+    }
+
+    section.estabelecimentos .interface {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    section.estabelecimentos .interface .titulo {
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    section.estabelecimentos .interface .titulo h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    section.estabelecimentos .interface .titulo h1 span {
+        color: #ff6b00;
+        font-weight: 600;
+    }
+
+    section.estabelecimentos .interface .estab {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section.estabelecimentos .interface .estab .line {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px
+    }
+
+    section.estabelecimentos .interface .estab a {
+        text-decoration: none;
+    }
+
+    section.estabelecimentos .interface .estab a .card-estab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 150px;
+        padding: 10px;
+        border: 1.5px solid #d9d9d9;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.12);
+        gap: 5px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    section.estabelecimentos .interface .estab a .card-estab h1 {
+        font-size: 14px;
+        color: #4d4d4d;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    section.estabelecimentos .interface .estab a .card-estab .avaliacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 5px;
+        gap: 3px;
+        border: 1.5px solid #e8e8e8;
+        border-radius: 999px;
+    }
+
+    section.estabelecimentos .interface .card-estab .avaliacao p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4d4d4d;
+    }
+
+    /* FIM DO ESTILO DOS ESTABELECIMENTOS */
+
+    /* ESTILO DA SIDEBAR */
+
+    section.sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        margin-top: 0;
+        border-top: 1px solid #d9d9d9;
+        padding: 5px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section.sidebar .home a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        gap: 2px;
+    }
+
+    section.sidebar .home a p {
+        font-size: 13px;
+        color: #ff6b00;
+        font-weight: 500;
+    }
+
+    section.sidebar .buscar a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        gap: 2px;
+    }
+
+    section.sidebar .buscar a p {
+        font-size: 13px;
+        color: #aaaaaa;
+    }
+
+    section.sidebar .sacola a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        gap: 2px;
+    }
+
+    section.sidebar .sacola a p {
+        font-size: 13px;
+        color: #aaaaaa;
+    }
+
+    section.sidebar .menu a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        gap: 2px;
+    }
+
+    section.sidebar .menu a p {
+        font-size: 13px;
+        color: #aaaaaa;
+    }
+
+
+    /* FIM DO ESTILO DA SIDEBAR */
+
+}
+
+@media screen and (max-width: 380px) {
+
+    /* ESTILO DOS ESTABELECIMENTOS */
+
+    section.estabelecimentos {
+        padding: 22px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 100px
+    }
+
+    section.estabelecimentos .interface {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    section.estabelecimentos .interface .titulo {
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    section.estabelecimentos .interface .titulo h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    section.estabelecimentos .interface .titulo h1 span {
+        color: #ff6b00;
+        font-weight: 600;
+    }
+
+    section.estabelecimentos .interface .estab {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section.estabelecimentos .interface .estab .line {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.estabelecimentos .interface .estab a {
+        text-decoration: none;
+    }
+
+    section.estabelecimentos .interface .estab a .card-estab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 140px;
+        padding: 10px;
+        border: 1.5px solid #d9d9d9;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.12);
+        gap: 2.5px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    section.estabelecimentos .interface .estab a .card-estab h1 {
+        font-size: 13px;
+        color: #4d4d4d;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    section.estabelecimentos .interface .estab a .card-estab .avaliacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 5px;
+        gap: 3px;
+        border: 1.5px solid #e8e8e8;
+        border-radius: 999px;
+    }
+
+    section.estabelecimentos .interface .card-estab .avaliacao p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4d4d4d;
+    }
+
+    /* FIM DO ESTILO DOS ESTABELECIMENTOS */
+
+}
